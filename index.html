@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HW-10</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header">
+          <img src="./img/logo.png" alt="logo" class="logo" />
+          <nav class="nav-links">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="#" class="nav-link">О нас</a>
+            <a href="#" class="nav-link">Отзывы</a>
+            <a href="#" class="nav-link">Контакты</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="container">
+        <div class="burger-menu">
+          <img src="./img/logo.png" alt="img" />
+          <img src="./img/burger.png" alt="img" class="burger1" />
+          <img src="./img/burger2.png" alt="img" class="burger2 hide" />
+        </div>
+        <div class="bur-m">
+          <p class="bm">Главная</p>
+          <p class="bm">О нас</p>
+          <p class="bm">Отзывы</p>
+          <p class="bm">Контакты</p>
+        </div>
+        <div class="hero">
+          <h1 class="hero-title">
+            Доставка <span class="orange-txt">Европейской</span> кухни прямо к
+            вам домой
+          </h1>
+          <p class="hero-descr">
+            Самое большое разнообразие
+            <span class="orange-txt">Европейских блюд</span> приготовленных
+            лучшими шеф-поварами!
+          </p>
+          <div class="btns">
+            <button class="order">
+              Забронироватьстолик&rarr;
+              <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+            </button>
+            <button class="btn-menu">Меню&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="promotions">
+      <div class="container">
+        <div class="promotions">
+          <div class="promotions-head">
+            <h2 class="title promotions-title">НАШИ АКЦИИ</h2>
+            <div class="prom-lines">
+              <!-- <img src="./img/str1.png" alt="img" class="str1" />
+              <img src="./img/str2.png" alt="img" class="str2" /> -->
+              <div class="line1">
+                <ion-icon name="chevron-back-outline" class="row1"></ion-icon>
+                <ion-icon name="remove-outline" class="linstr1"></ion-icon>
+              </div>
+              <div class="line2">
+                <ion-icon name="remove-outline" class="linstr2"></ion-icon>
+                <ion-icon
+                  name="chevron-forward-circle-outline"
+                  class="row2"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="promotions-blocks">
+            <div class="promotions-block">
+              <img src="./img/block1.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Пицца “Баварская”</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input type="radio" id="40" name="pi" value="40" checked />
+                  <label for="40">40см</label>
+                  <input type="radio" id="30" name="pi" value="30" />
+                  <label for="30">30см</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number"></span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">650 СОМ</p>
+                  <p class="price2">600 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/block2.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Сочный Royal Cheese</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input
+                    type="radio"
+                    id="big"
+                    name="cheese"
+                    value="40"
+                    checked
+                  />
+                  <label for="40">БОЛЬШОЙ</label>
+                  <input type="radio" id="small" name="cheese" value="30" />
+                  <label for="30">МАЛЕНЬКИЙ</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number"></span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">350 СОМ</p>
+                  <p class="price2">300 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/block3.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Вок лапша харусаме</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input type="radio" id="1l" name="lapwa" value="40" checked />
+                  <label for="40">1 п</label>
+                  <input type="radio" id="07l" name="lapwa" value="30" />
+                  <label for="30">0,7 п</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number"></span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">300 СОМ</p>
+                  <p class="price2">200 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/block4.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Сёмга на вертеле</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input
+                    type="radio"
+                    id="big"
+                    name="semga"
+                    value="40"
+                    checked
+                  />
+                  <label for="40">БОЛЬШОЙ</label>
+                  <input type="radio" id="small" name="semga" value="30" />
+                  <label for="30">МАЛЕНЬКИЙ</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number"></span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">680 СОМ</p>
+                  <p class="price2">600 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/block1.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Пицца “Баварская”</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input type="radio" id="40" name="pizza" value="40" checked />
+                  <label for="40">40см</label>
+                  <input type="radio" id="30" name="pizza" value="30" />
+                  <label for="30">30см</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number"></span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">650 СОМ</p>
+                  <p class="price2">600 СОМ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="new">
+          <div class="promotions-head">
+            <h2 class="title promotions-title">НОВЫЕ</h2>
+            <div class="prom-lines">
+              <div class="line1">
+                <ion-icon name="chevron-back-outline" class="row1"></ion-icon>
+                <ion-icon name="remove-outline" class="linstr1"></ion-icon>
+              </div>
+              <div class="line2">
+                <ion-icon name="remove-outline" class="linstr2"></ion-icon>
+                <ion-icon
+                  name="chevron-forward-circle-outline"
+                  class="row2"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="promotions-blocks">
+            <div class="promotions-block">
+              <img src="./img/new1.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Шаурма с люля-кебабом</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input
+                    type="radio"
+                    id="40"
+                    name="waurma"
+                    value="40"
+                    checked
+                  />
+                  <label for="40">БОЛЬШОЙ</label>
+                  <input type="radio" id="30" name="waurma" value="30" />
+                  <label for="30">МАЛЕНЬКИЙ</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number">1</span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price" style="justify-content: center">
+                  <p class="price2">600 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/new2.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Бифштекс из говядины</h3>
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input type="radio" id="big" name="bif" value="40" checked />
+                  <label for="40">БОЛЬШОЙ</label>
+                  <input type="radio" id="small" name="bif" value="30" />
+                  <label for="30">МАЛЕНЬКИЙ</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number">1</span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">900 СОМ</p>
+                  <p class="price2">750 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/new3.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Банзай Сет</h3>
+                <br />
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input type="radio" id="1l" name="set" value="40" checked />
+                  <label for="40">1 п</label>
+                  <input type="radio" id="07l" name="set" value="30" />
+                  <label for="30">0,7 п</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number">1</span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price" style="justify-content: center">
+                  <p class="price2">200 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/new4.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Мясо с овощами</h3>
+                <br />
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input
+                    type="radio"
+                    id="big"
+                    name="miaso"
+                    value="40"
+                    checked
+                  />
+                  <label for="40">БОЛЬШОЙ</label>
+                  <input type="radio" id="small" name="miaso" value="30" />
+                  <label for="30">МАЛЕНЬКИЙ</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number">1</span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price" style="justify-content: center">
+                  <p class="price2">600 СОМ</p>
+                </div>
+              </div>
+            </div>
+            <div class="promotions-block">
+              <img src="./img/block1.png" alt="img" />
+              <div class="promotions-block-txt">
+                <h3 class="promotions-block-title">Пицца “Баварская”</h3>
+                <br />
+                <p class="promotions-block-descr">
+                  Томатный соус, моцарелла, колбаски, лук, корнишоны, соус
+                  Горничный
+                </p>
+                <div class="radios">
+                  <input type="radio" id="40" name="price" value="40" checked />
+                  <label for="40">40см</label>
+                  <input type="radio" id="30" name="price" value="30" />
+                  <label for="30">30см</label>
+                </div>
+                <div class="counter">
+                  <span class="plus">+</span>
+                  <span class="cointer-line">|</span>
+                  <span class="counter-number">1</span>
+                  <span class="cointer-line">|</span>
+                  <span class="minus">-</span>
+                </div>
+                <div class="price">
+                  <p class="price1">650 СОМ</p>
+                  <p class="price2">600 СОМ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="shef">
+      <div class="container">
+        <div class="shef">
+          <img src="./img/Шеф.png" alt="#" />
+          <div class="shef-txt">
+            <h3 class="shef-title">
+              ЗАЧЕМ<br /><span>Вы должны выбрать нас? </span>
+            </h3>
+            <img src="./img/shef elem.png" alt="img" />
+            <p class="shef-descr">
+              В приготовлении своих блюд, мы используем исходные продукты
+              высшего качества и полностью отвечаем за отличие, свежесть и
+              качество поданных блюд, а также мы используем экологически-чистую
+              посуду.
+            </p>
+            <button class="shef-btn">Смотрет все</button>
+          </div>
+        </div>
+        <div class="reservation">
+          <div class="res-input">
+            <h3 class="reserv-title">ЗАБРОНИРОВАТЬ СТОЛ</h3>
+            <label for="name">ИМЯ</label><br />
+            <input
+              type="text"
+              placeholder="АЛТЫНБУБУ"
+              name="name"
+              id="name"
+            /><br />
+            <label for="tel">телефон</label><br />
+            <input
+              type="text"
+              placeholder="0708 11 26 10"
+              name="tel"
+              id="tel"
+            /><br />
+            <label for="data">дата</label><br />
+            <input
+              type="text"
+              name="data"
+              id="data"
+              class="data-in"
+              placeholder="   __ ИЮНЬ  | V"
+            />
+            <input
+              type="text"
+              class="data-in"
+              placeholder="     - - : - -   | V"
+            /><br />
+            <label for="kom">комментарии</label>
+            <br />
+            <input
+              type="text"
+              name="kom"
+              id="kom"
+              placeholder="Привет! Стол на 4-персоны."
+            />
+            <br />
+            <button class="btn-sub">Отправить</button>
+          </div>
+        </div>
+        <div class="review">
+          <div class="rev-txt">
+            <h2 class="title rev-title">Oтзывы клиентов</h2>
+            <p class="rev-descr">
+              После проведённого времени в кафе остались приятные впечатление.
+              Интерьер интересный, зал чистый. Персонал был внимателен,
+              доброжелателен и предусмотрителен. Меню показалось скучноваты, но
+              все блюда вкусные. Особенно понравился стейк лосося на гриле, он
+              был просто потрясающе вкусный. Если вы не поклонник авторской
+              кухни, а просто хотите хорошо провести вечер с друзьями,то
+              Вам,конечно,сюда.
+            </p>
+            <button class="rev-btn">отзывы</button>
+          </div>
+          <div class="rev-blocks">
+            <div class="rev-block">
+              <img src="./img/linerev1.png" alt="img" class="linerev" />
+              <img src="./img/ava1.png" alt="avatar" />
+              <div class="rev-block-txt">
+                <h5 class="rev-block-title">D Sadaev</h5>
+                <div class="stars">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <p class="rev-block-descr">
+                  После проведённого времени в кафе остались приятные
+                  впечатления. Интерьер интересный, зал чистый. Персонал был
+                  внимателен,доброжелателен и предусмотрителен.
+                </p>
+                <a href="#" class="rev-link">Читать дальше</a
+                ><span class="rev-date">25.06.2021</span>
+              </div>
+            </div>
+            <div class="rev-block">
+              <img src="./img/linerev2.png" alt="img" class="linerev1" />
+              <img src="./img/ava2.png" alt="avatar" />
+              <div class="rev-block-txt">
+                <h5 class="rev-block-title">Şeker Portakal</h5>
+                <div class="stars">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <p class="rev-block-descr">
+                  После проведённого времени в кафе остались приятные
+                  впечатления. Интерьер интересный, зал чистый. Персонал был
+                  внимателен,доброжелателен и предусмотрителен.
+                </p>
+                <a href="#" class="rev-link"></a
+                ><span class="rev-date rev-date2">05.01.2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <h2 class="title slider-title">Галерея</h2>
+          <input type="radio" name="slide" id="img1" checked />
+          <input type="radio" name="slide" id="img2" />
+          <input type="radio" name="slide" id="img3" />
+          <input type="radio" name="slide" id="img4" />
+          <div class="foto">
+            <img src="./img/slider1.png" alt="img" id="photo1" />
+            <img src="./img/slider2.png" alt="img" id="photo2" />
+            <img src="./img/slider3.png" alt="img" id="photo3" />
+            <img src="./img/slider3.png" alt="img" id="photo4" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-links">
+            <a href="#" class="footer-link">Главная</a>
+            <a href="#" class="footer-link">О нас</a>
+            <a href="#" class="footer-link">Отзывы</a>
+            <a href="#" class="footer-link">Контакты</a><br /><br /><br />
+          </div>
+          <img src="./img/logo.png" alt="img" class="footer-logo" />
+          <div class="elements">
+            <div class="address">
+              <img src="./img/house 1.png" alt="img" />
+              <p class="address-txt">
+                Адрес: <br />
+                г. Бишкек <br />
+                ул. Айтматов №154
+              </p>
+            </div>
+            <div class="footer-call">
+              <img src="./img/phone-call.png" alt="img" />
+              <p>
+                +996 708 12 10 33 <br />
+                Звонить
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="footer-descr">&#169; 2021. Все право защищенны</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js.js"></script>
+  </body>
+</html>
